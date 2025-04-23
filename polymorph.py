@@ -3,7 +3,6 @@ class animal:
     def __init__(self, name,limbs):
         self.name = name
         self.limb_count = limbs
-    print()
 
 '''creating child classes of the class animal
 each class is define with 4 functions; __str__(), move(), reproduction() and body_cover()
@@ -91,32 +90,32 @@ class insect(animal):
         print()
 
 # defining the objects 
-animal = mammal("dog",4)
-print(animal)
-animal.move()
-animal.reproduction()
-animal.body_cover()
+dog = mammal("dog",4)
+print(dog)
+dog.move()
+dog.reproduction()
+dog.body_cover()
 print('**************************************************************************')
 
-animal = insect("spider",8)
-print(animal)
-animal.move()
-animal.reproduction()
-animal.body_cover()
-print('**************************************************************************')
-
-
-animal = reptile("lizard",4)
-print(animal)
-animal.move()
-animal.reproduction()
-animal.body_cover()
+spider = insect("spider",8)
+print(spider)
+spider.move()
+spider.reproduction()
+spider.body_cover()
 print('**************************************************************************')
 
 
-animal = bird("parrot",2)
-print(animal)
-animal.move()
-animal.reproduction()
-animal.body_cover()
+lizard = reptile("lizard",4)
+print(lizard)
+lizard.move()
+lizard.reproduction()
+lizard.body_cover()
+print('**************************************************************************')
+
+
+parrot = bird("parrot",2)
+print(parrot)
+parrot.move()
+parrot.reproduction()
+parrot.body_cover()
 print('**************************************************************************')

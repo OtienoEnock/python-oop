@@ -1,9 +1,13 @@
+#create 1 parent class with the only initializer function. All the other classes will inherit from here. 
 class animal:
     def __init__(self, name,limbs):
         self.name = name
         self.limb_count = limbs
     print()
 
+'''creating child classes of the class animal
+each class is define with 4 functions; __str__(), move(), reproduction() and body_cover()
+Initializer method in each class is inherited from the parent.'''
 class mammal(animal):
     
     def __str__(self):
@@ -86,7 +90,7 @@ class insect(animal):
         print(f"{self.name} lays eggs then undergo metamorphosis most often.")
         print()
 
-
+# defining the objects 
 animal = mammal("dog",4)
 print(animal)
 animal.move()
